@@ -1,19 +1,18 @@
-package com.RSearch.RestUtils;
+package com.SRPWebService;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 
 @Path("/hello")
-public class Ping  {
-	
+public class ping
+{
 	@GET
 	@Path("/test")
-	public Response getMsg() {
- 
+	public Response test()
+	{
 		String output = "Ping! Hello There!";
 		return Response.status(200).entity(output).build();
-		
 	}
-
 }
+	
